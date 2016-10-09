@@ -1,0 +1,17 @@
+Package: com.zerox.PhoneBrother
+Name: PhoneBrother
+Version: 1.0-1
+Description: Fix Phone.app while LittleBrother enabled
+Section: Tweak
+Depends: firmware (>= 9.0), mobilesubstrate
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: ZeroX <lawliet0914@gmail.com>
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: ZeroX <lawliet0914@gmail.com>
+Icon: 
+

@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D73C9A411DA9ECDF00C84BC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73C9A401DA9ECDF00C84BC7 /* Foundation.framework */; };
+		D73C9A4C1DA9ECDF00C84BC7 /* PhoneBrother.mm in Sources */ = {isa = PBXBuildFile; fileRef = D73C9A4B1DA9ECDF00C84BC7 /* PhoneBrother.mm */; };
+		D78F78BB1DA9ED5B0005D3CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F78BA1DA9ED5B0005D3CD /* UIKit.framework */; };
+		D78F78BD1DA9ED600005D3CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F78BC1DA9ED600005D3CD /* CoreGraphics.framework */; };
+		D78F78BF1DA9ED6E0005D3CD /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F78BE1DA9ED6E0005D3CD /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D73C9A3D1DA9ECDF00C84BC7 /* PhoneBrother.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = PhoneBrother.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73C9A401DA9ECDF00C84BC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D73C9A451DA9ECDF00C84BC7 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		D73C9A461DA9ECDF00C84BC7 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		D73C9A481DA9ECDF00C84BC7 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		D73C9A491DA9ECDF00C84BC7 /* PhoneBrother-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhoneBrother-Prefix.pch"; sourceTree = "<group>"; };
+		D73C9A4A1DA9ECDF00C84BC7 /* PhoneBrother.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhoneBrother.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D73C9A4B1DA9ECDF00C84BC7 /* PhoneBrother.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = PhoneBrother.mm; sourceTree = "<group>"; };
+		D73C9A501DA9ECDF00C84BC7 /* PhoneBrother.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PhoneBrother.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/PhoneBrother.plist; sourceTree = "<group>"; };
+		D78F78BA1DA9ED5B0005D3CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D78F78BC1DA9ED600005D3CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D78F78BE1DA9ED6E0005D3CD /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D73C9A391DA9ECDF00C84BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78F78BF1DA9ED6E0005D3CD /* libsubstrate.dylib in Frameworks */,
+				D78F78BD1DA9ED600005D3CD /* CoreGraphics.framework in Frameworks */,
+				D78F78BB1DA9ED5B0005D3CD /* UIKit.framework in Frameworks */,
+				D73C9A411DA9ECDF00C84BC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D73C9A321DA9ECDF00C84BC7 = {
+			isa = PBXGroup;
+			children = (
+				D73C9A421DA9ECDF00C84BC7 /* PhoneBrother */,
+				D73C9A3F1DA9ECDF00C84BC7 /* Frameworks */,
+				D73C9A3E1DA9ECDF00C84BC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D73C9A3E1DA9ECDF00C84BC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A3D1DA9ECDF00C84BC7 /* PhoneBrother.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D73C9A3F1DA9ECDF00C84BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D78F78BE1DA9ED6E0005D3CD /* libsubstrate.dylib */,
+				D78F78BC1DA9ED600005D3CD /* CoreGraphics.framework */,
+				D78F78BA1DA9ED5B0005D3CD /* UIKit.framework */,
+				D73C9A401DA9ECDF00C84BC7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73C9A421DA9ECDF00C84BC7 /* PhoneBrother */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A4A1DA9ECDF00C84BC7 /* PhoneBrother.xm */,
+				D73C9A4B1DA9ECDF00C84BC7 /* PhoneBrother.mm */,
+				D73C9A431DA9ECDF00C84BC7 /* Package */,
+				D73C9A471DA9ECDF00C84BC7 /* Supporting Files */,
+			);
+			path = PhoneBrother;
+			sourceTree = "<group>";
+		};
+		D73C9A431DA9ECDF00C84BC7 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A441DA9ECDF00C84BC7 /* DEBIAN */,
+				D73C9A4D1DA9ECDF00C84BC7 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		D73C9A441DA9ECDF00C84BC7 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A451DA9ECDF00C84BC7 /* control.txt */,
+				D73C9A461DA9ECDF00C84BC7 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		D73C9A471DA9ECDF00C84BC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A481DA9ECDF00C84BC7 /* PackageVersion.plist */,
+				D73C9A491DA9ECDF00C84BC7 /* PhoneBrother-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D73C9A4D1DA9ECDF00C84BC7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A4E1DA9ECDF00C84BC7 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D73C9A4E1DA9ECDF00C84BC7 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A4F1DA9ECDF00C84BC7 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		D73C9A4F1DA9ECDF00C84BC7 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				D73C9A501DA9ECDF00C84BC7 /* PhoneBrother.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D73C9A3A1DA9ECDF00C84BC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D73C9A3C1DA9ECDF00C84BC7 /* PhoneBrother */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D73C9A531DA9ECDF00C84BC7 /* Build configuration list for PBXNativeTarget "PhoneBrother" */;
+			buildPhases = (
+				D73C9A371DA9ECDF00C84BC7 /* ShellScript */,
+				D73C9A381DA9ECDF00C84BC7 /* Sources */,
+				D73C9A391DA9ECDF00C84BC7 /* Frameworks */,
+				D73C9A3A1DA9ECDF00C84BC7 /* Headers */,
+				D73C9A3B1DA9ECDF00C84BC7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneBrother;
+			productName = PhoneBrother;
+			productReference = D73C9A3D1DA9ECDF00C84BC7 /* PhoneBrother.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D73C9A331DA9ECDF00C84BC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					D73C9A3C1DA9ECDF00C84BC7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D73C9A361DA9ECDF00C84BC7 /* Build configuration list for PBXProject "PhoneBrother" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D73C9A321DA9ECDF00C84BC7;
+			productRefGroup = D73C9A3E1DA9ECDF00C84BC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D73C9A3C1DA9ECDF00C84BC7 /* PhoneBrother */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D73C9A371DA9ECDF00C84BC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		D73C9A3B1DA9ECDF00C84BC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D73C9A381DA9ECDF00C84BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73C9A4C1DA9ECDF00C84BC7 /* PhoneBrother.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D73C9A511DA9ECDF00C84BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		D73C9A521DA9ECDF00C84BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		D73C9A541DA9ECDF00C84BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhoneBrother/PhoneBrother-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.233.110;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		D73C9A551DA9ECDF00C84BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhoneBrother/PhoneBrother-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.233.110;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D73C9A361DA9ECDF00C84BC7 /* Build configuration list for PBXProject "PhoneBrother" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73C9A511DA9ECDF00C84BC7 /* Debug */,
+				D73C9A521DA9ECDF00C84BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D73C9A531DA9ECDF00C84BC7 /* Build configuration list for PBXNativeTarget "PhoneBrother" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D73C9A541DA9ECDF00C84BC7 /* Debug */,
+				D73C9A551DA9ECDF00C84BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D73C9A331DA9ECDF00C84BC7 /* Project object */;
+}
