@@ -59,3 +59,19 @@ static BOOL pb_zoomed()
 }
 
 %end
+
+%hook MPKeypadViewController
+
+- (id)initWithDialerType:(int)type
+{
+	if (self = %orig)
+	{
+		[[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification object:nil queue:nil usingBlock:^(NSNotification *notification) {
+			[self loadView];
+			[self viewWillAppear:NO];
+		}];
+	}
+	return self;
+}
+
+%end

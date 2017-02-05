@@ -1,6 +1,6 @@
 Package: com.zerox.PhoneBrother
 Name: PhoneBrother
-Version: 1.0-1
+Version: 1.1-1
 Description: Fix Phone.app while LittleBrother enabled
 Section: Tweak
 Depends: firmware (>= 9.0), mobilesubstrate
